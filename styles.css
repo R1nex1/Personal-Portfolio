@@ -155,12 +155,19 @@ header {
     color: var(--clr-light);
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
+    width: 50%;
     z-index: 100;
 
     transform: translatex(100%);
     transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Add this property */
+    border-left: 1px solid white;
 }
 
 .nav__list {
@@ -190,7 +197,7 @@ header {
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
